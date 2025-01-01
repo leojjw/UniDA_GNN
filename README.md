@@ -2,6 +2,9 @@
 
 This repository contains the PyTorch implementation of my novel node classification model based on Graph Neural Networks (GNNs). This model excels in tasks involving graph node classification within the context of universal domain adaptation, where label sets between source and target domains may not be identical. It is also designed to resist overfitting, even in the presence of label noise.
 
+## Model Structure
+![model](./model_structure.png)
+
 ## Key Features
 
 - **Dual GCN Components**: Integrates local and global graph information for comprehensive feature extraction.
@@ -18,6 +21,9 @@ This repository contains the PyTorch implementation of my novel node classificat
 - numpy (>=1.16.4)
 - torch_scatter (>= 1.3.0)
 - torch_geometric (>= 1.3.0)
+
+## Performance Comparison with Other Models
+![result](./result_comparison.png)
 
 ## Datasets
 The `data` folder contains different domain data. The preprocessed data can be found on [Google Drive](https://drive.google.com/file/d/1DzQ3QN9yjQxU4vtYkXyCiJKFw7oCCPSM/view?usp=sharing).
